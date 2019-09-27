@@ -4,31 +4,31 @@
 
   <div class="calculator-keys">
 
-    <button type="button" class="operator btn btn-info" value="-" (click)="addOperator('-')">-</button>
-    <button type="button" class="operator btn btn-info" value="*" (click)="addOperator('*')">&times;</button>
-    <button type="button" class="operator btn btn-info" value="+" (click)="addOperator('+')">+</button>
-    <button type="button" class="operator btn btn-info" value="/" (click)="addOperator('/')">&divide;</button>
+    <button type="button" class="operator btn btn-info" (click)="addOperator('-')">-</button>
+    <button type="button" class="operator btn btn-info" (click)="addOperator('*')">&times;</button>
+    <button type="button" class="operator btn btn-info" (click)="addOperator('+')">+</button>
+    <button type="button" class="operator btn btn-info" (click)="addOperator('/')">&divide;</button>
 
-    <button type="button" value="7" class="btn btn-light" (click)="display('7')">7</button>
-    <button type="button" value="8" class="btn btn-light" (click)="display('8')">8</button>
-    <button type="button" value="9" class="btn btn-light" (click)="display('9')">9</button>
-
-
-    <button type="button" value="4" class="btn btn-light" (click)="display('4')">4</button>
-    <button type="button" value="5" class="btn btn-light" (click)="display('5')">5</button>
-    <button type="button" value="6" class="btn btn-light" (click)="display('6')">6</button>
+    <button type="button" class="btn btn-light" (click)="display('7')">7</button>
+    <button type="button" class="btn btn-light" (click)="display('8')">8</button>
+    <button type="button" class="btn btn-light" (click)="display('9')">9</button>
 
 
-    <button type="button" value="1" class="btn btn-light" (click)="display('1')">1</button>
-    <button type="button" value="2" class="btn btn-light" (click)="display('2')">2</button>
-    <button type="button" value="3" class="btn btn-light" (click)="display('3')">3</button>
+    <button type="button" class="btn btn-light" (click)="display('4')">4</button>
+    <button type="button" class="btn btn-light" (click)="display('5')">5</button>
+    <button type="button" class="btn btn-light" (click)="display('6')">6</button>
 
 
-    <button type="button" value="0" class="btn btn-light" (click)="display('0')">0</button>
-    <button type="button" class="decimal function btn btn-secondary" value="." (click)="display('.')">.</button>
-    <button type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear" (click)="reset()">AC</button>
+    <button type="button" class="btn btn-light" (click)="display('1')">1</button>
+    <button type="button" class="btn btn-light" (click)="display('2')">2</button>
+    <button type="button" class="btn btn-light" (click)="display('3')">3</button>
 
-    <button type="button" class="equal-sign operator btn btn-light" value="=" (click)=calculate()>=</button>
+
+    <button type="button" class="btn btn-light" (click)="display('0')">0</button>
+    <button type="button" class="decimal function btn btn-secondary" (click)="display('.')">.</button>
+    <button type="button" class="all-clear function btn btn-danger btn-sm" (click)="reset()">AC</button>
+
+    <button type="button" class="equal-sign operator btn btn-light" (click)=calculate()>=</button>
 
   </div>
 </div>
